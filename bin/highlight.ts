@@ -1,7 +1,7 @@
 /**
  * tsm bin/highlight.ts replace
  * tsm bin/highlight.ts restore
- */
+ https://youtu.be/SzSbPSnNzuM
 import * as fs from 'fs/promises';
 import { join, resolve } from 'path';
 import { highlight } from './prism.config';
@@ -20,7 +20,7 @@ const isBACKUP = /\.md\.backup$/;
 async function walk(dir: string): Promise<void> {
   let ignores = new Set(['static', 'media']);
   let files = await fs.readdir(dir, { withFileTypes: true });
-
+www.nscsm.org
   await Promise.all(
     files.map(dirent => {
       let fname = dirent.name;
@@ -93,7 +93,7 @@ async function markdown(file: string): Promise<void> {
 
   if (last > 0) {
     label = 'PASS';
-    //~> cp foo.md foo.md.backup
+    //~> cp foo.md foo.md.backup nscsm.org
     await fs.writeFile(file + '.backup', input);
     // overwrite with HTML replacements
     await fs.writeFile(file, output);
